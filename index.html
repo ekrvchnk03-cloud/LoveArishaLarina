@@ -1242,7 +1242,6 @@ const MOVIES_DB = [
   { t: 'Бойцовский клуб', y: 1999, g: ['Драма', 'Триллер'], r: 8.8, d: 'Офисный работник встречает харизматичного незнакомца и создаёт подпольный бойцовский клуб.', img: 'https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg' },
   { t: 'Реальная любовь', y: 2003, g: ['Романтика', 'Комедия', 'Мелодрама'], r: 7.6, d: 'Восемь параллельных историй о любви, разворачивающихся в Лондоне перед Рождеством.', img: 'https://upload.wikimedia.org/wikipedia/en/f/f7/Love_Actually_movie.jpg' },
   { t: 'Дьявол носит Prada', y: 2006, g: ['Комедия', 'Драма', 'Мелодрама'], r: 6.9, d: 'Молодая журналистка устраивается работать ассистенткой влиятельного модного редактора.', img: 'https://upload.wikimedia.org/wikipedia/en/2/2d/Devilwearsprada.jpg' },
-  { t: 'Дом летающих кинжалов', y: 2004, g: ['Драма', 'Романтика', 'Приключения'], r: 7.5, d: 'История любви и предательства в эпоху династии Тан.', img: 'https://upload.wikimedia.org/wikipedia/en/8/86/House_flying_daggers.jpg' },
   { t: 'Назад в будущее', y: 1985, g: ['Фантастика', 'Комедия', 'Приключения'], r: 8.5, d: 'Подросток случайно отправляется на 30 лет в прошлое на машине времени.', img: 'https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg' },
   { t: 'Звёздные войны: Новая надежда', y: 1977, g: ['Фантастика', 'Приключения'], r: 8.6, d: 'Молодой фермер становится джедаем и присоединяется к битве против Галактической Империи.', img: 'https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg' },
   { t: 'Великий Гэтсби', y: 2013, g: ['Драма', 'Романтика'], r: 7.2, d: 'История загадочного миллионера Джея Гэтсби и его одержимости красавицей Дэйзи.', img: 'https://upload.wikimedia.org/wikipedia/en/1/1d/The_Great_Gatsby_2013_film_poster.jpg' },
@@ -1255,32 +1254,26 @@ const MOVIES_DB = [
   { t: 'Ирония судьбы, или С лёгким паром!', y: 1975, g: ['Комедия', 'Мелодрама', 'Романтика'], r: 8.1, d: 'Главный герой накануне Нового года по случайности оказывается в Ленинграде в чужой квартире.', img: 'https://upload.wikimedia.org/wikipedia/en/8/85/The_Irony_of_Fate_poster.jpg' },
   { t: 'Москва слезам не верит', y: 1980, g: ['Драма', 'Мелодрама', 'Романтика'], r: 8.2, d: 'История трёх подруг, приехавших покорять Москву в конце 50-х.', img: 'https://upload.wikimedia.org/wikipedia/en/e/ec/Moscow_does_not_believe_in_tears_poster.jpg' },
   { t: 'Кавказская пленница', y: 1967, g: ['Комедия', 'Романтика'], r: 8.2, d: 'Студент собирает кавказский фольклор и встречает красавицу Нину.', img: 'https://upload.wikimedia.org/wikipedia/en/1/12/Kidnapping_Caucasian_Style.jpg' },
-  { t: 'Очень странные дела', y: 2016, g: ['Фантастика', 'Триллер', 'Приключения'], r: 8.7, d: 'В маленьком городке исчезает мальчик, а появляется загадочная девочка со сверхспособностями.', img: 'https://upload.wikimedia.org/wikipedia/en/3/38/Stranger_Things_logo.png' },
   { t: 'Тайна Коко', y: 2017, g: ['Анимация', 'Приключения', 'Мелодрама'], r: 8.4, d: 'Мальчик Мигель попадает в Страну мёртвых, чтобы раскрыть тайну своей семьи.', img: 'https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg' },
   { t: 'Душа', y: 2020, g: ['Анимация', 'Драма', 'Фэнтези'], r: 8.0, d: 'Учитель музыки оказывается на грани жизни и смерти и пытается вернуться в своё тело.', img: 'https://upload.wikimedia.org/wikipedia/en/3/33/Soul_%282020_film%29_poster.jpg' },
-  { t: 'Жан-Пьер и Александра', y: 2022, g: ['Романтика', 'Мелодрама'], r: 7.3, d: 'История двух одиночеств, которые случайно встречаются в Париже и меняют жизни друг друга.', img: '' },
   { t: 'Поймай меня, если сможешь', y: 2002, g: ['Драма', 'Комедия', 'Детектив'], r: 8.1, d: 'Подросток успешно выдаёт себя за пилота, врача и юриста, обманывая всё ФБР.', img: 'https://upload.wikimedia.org/wikipedia/en/8/8b/Catch_Me_If_You_Can_2002_movie.jpg' },
-  { t: 'Король Артур: Легенда меча', y: 2017, g: ['Фэнтези', 'Приключения'], r: 7.1, d: 'Молодой Артур узнаёт о своём королевском происхождении и пытается вернуть трон.', img: 'https://upload.wikimedia.org/wikipedia/en/a/a3/King_Arthur_Legend_of_the_Sword.png' },
-  { t: 'Великолепная семёрка', y: 2016, g: ['Приключения', 'Драма'], r: 6.9, d: 'Семеро стрелков объединяются, чтобы защитить городок от безжалостного промышленника.', img: 'https://upload.wikimedia.org/wikipedia/en/f/fd/The_Magnificent_Seven_2016_film_poster.png' },
   { t: 'Богемская рапсодия', y: 2018, g: ['Драма'], r: 7.9, d: 'История легендарной группы Queen и её фронтмена Фредди Меркьюри.', img: 'https://upload.wikimedia.org/wikipedia/en/9/9e/Bohemian_Rhapsody_poster.png' },
   { t: 'Звезда родилась', y: 2018, g: ['Драма', 'Романтика', 'Мелодрама'], r: 7.6, d: 'Опытный музыкант помогает молодой певице сделать карьеру, влюбляясь в неё.', img: 'https://upload.wikimedia.org/wikipedia/en/4/4f/A_Star_Is_Born.png' },
   { t: 'Барби', y: 2023, g: ['Комедия', 'Приключения', 'Фэнтези'], r: 6.8, d: 'Барби и Кен отправляются из Барбиленда в реальный мир и открывают для себя его радости и трудности.', img: 'https://upload.wikimedia.org/wikipedia/en/0/0b/Barbie_2023_poster.jpg' },
   { t: 'Оппенгеймер', y: 2023, g: ['Драма'], r: 8.3, d: 'История создания атомной бомбы американским физиком Робертом Оппенгеймером.', img: 'https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg' }
 ];
 
-// ===== Состояние =====
 let movieState = {
   selectedGenres: new Set(['Романтика', 'Комедия']),
   count: 15,
   shortlist: [],
-  phase: 'intro',
   swiper: 'boy',
   index: 0,
   boyLikes: new Set(),
-  girlLikes: new Set()
+  girlLikes: new Set(),
+  isAnimating: false
 };
 
-// Инициализация чипсов жанров
 function initGenreChips() {
   const container = document.getElementById('genreChips');
   container.innerHTML = '';
@@ -1298,7 +1291,6 @@ function initGenreChips() {
 }
 initGenreChips();
 
-// Чипсы кол-ва
 document.querySelectorAll('#countChips .genre-chip').forEach(chip => {
   chip.onclick = () => {
     document.querySelectorAll('#countChips .genre-chip').forEach(c => c.classList.remove('active'));
@@ -1307,31 +1299,30 @@ document.querySelectorAll('#countChips .genre-chip').forEach(chip => {
   };
 });
 
-// Запуск
 document.getElementById('startMoviesBtn').addEventListener('click', () => {
-  // Фильтруем фильмы по выбранным жанрам
   const selectedArr = Array.from(movieState.selectedGenres);
-  let pool;
-  if (selectedArr.length === 0) {
-    pool = [...MOVIES_DB];
-  } else {
-    pool = MOVIES_DB.filter(m => m.g.some(genre => selectedArr.includes(genre)));
-  }
+  let pool = selectedArr.length === 0 
+    ? [...MOVIES_DB] 
+    : MOVIES_DB.filter(m => m.g.some(genre => selectedArr.includes(genre)));
+  
   if (pool.length < 3) {
     showModal('🎬', 'Маловато фильмов', 'Выберите больше жанров — в базе нашлось слишком мало подходящих фильмов.');
     return;
   }
+  
   movieState.shortlist = pickRandom(pool, Math.min(movieState.count, pool.length));
-  movieState.phase = 'swipe-boy';
   movieState.swiper = 'boy';
   movieState.index = 0;
   movieState.boyLikes.clear();
   movieState.girlLikes.clear();
+  movieState.isAnimating = false;
   
   document.getElementById('movieIntro').style.display = 'none';
   document.getElementById('moviePhaseSwipe').classList.add('active');
+  document.getElementById('moviePhasePass').classList.remove('active');
+  document.getElementById('moviePhaseResults').classList.remove('active');
   updateSwiperHeader();
-  renderMovieCards();
+  buildAllCards();
 });
 
 function updateSwiperHeader() {
@@ -1343,58 +1334,48 @@ function updateSwiperHeader() {
     h.className = 'swiper-header girl';
     h.innerHTML = '👸 Свайпает Ариша';
   }
-  document.getElementById('movieCounter').textContent = `Фильм ${movieState.index + 1} из ${movieState.shortlist.length}`;
+  updateCounter();
 }
 
-function renderMovieCards() {
+function updateCounter() {
+  const idx = Math.min(movieState.index + 1, movieState.shortlist.length);
+  document.getElementById('movieCounter').textContent = `Фильм ${idx} из ${movieState.shortlist.length}`;
+}
+
+// === [Address2] ВСЕ карточки сразу один раз ===
+function buildAllCards() {
   const stack = document.getElementById('movieCardStack');
   stack.innerHTML = '';
   document.getElementById('movieStackEmpty').classList.remove('active');
   
-  if (movieState.index >= movieState.shortlist.length) {
-    showStackEmpty();
-    return;
-  }
-  
-  // Показываем до 3 карточек: сначала рисуем нижние, потом верхние
-  // Чтобы верхняя (depth=0) оказалась ПОСЛЕДНЕЙ в DOM
-  const maxDepth = Math.min(2, movieState.shortlist.length - movieState.index - 1);
-  for (let i = maxDepth; i >= 0; i--) {
-    const movie = movieState.shortlist[movieState.index + i];
+  // Создаём все карточки. Первая в DOM = самая нижняя.
+  // Последняя в DOM = верхняя (которую свайпаем первой).
+  // Идём с конца массива к началу.
+  for (let i = movieState.shortlist.length - 1; i >= 0; i--) {
+    const movie = movieState.shortlist[i];
     const card = createMovieCard(movie, i);
     stack.appendChild(card);
   }
-  updateCounter();
-  attachSwipeHandlers();
-}
   
-  // Показываем текущую и 2 следующих карточки
-  for (let i = Math.min(2, movieState.shortlist.length - movieState.index - 1); i >= 0; i--) {
-    const movie = movieState.shortlist[movieState.index + i];
-    const card = createMovieCard(movie, i);
-    stack.appendChild(card);
-  }
+  updateCardStyles();
   updateCounter();
-  attachSwipeHandlers();
 }
 
-function createMovieCard(movie, depth) {
+function createMovieCard(movie, movieIdx) {
   const card = document.createElement('div');
   card.className = 'movie-card';
-  card.style.zIndex = 100 - depth;
-  card.style.transform = `scale(${1 - depth * 0.04}) translateY(${depth * 8}px)`;
-  card.style.opacity = depth === 0 ? '1' : '0.6';
+  card.dataset.idx = movieIdx;
   
   const posterStyle = movie.img 
     ? `background-image: url('${movie.img}')` 
-    : `background: linear-gradient(135deg, var(--pink-medium), var(--pink-deep)); display: flex; align-items: center; justify-content: center; font-size: 4em;`;
-  const posterContent = movie.img ? '' : '🎬';
+    : `background: linear-gradient(135deg, var(--pink-medium), var(--pink-deep)); display: flex; align-items: center; justify-content: center;`;
+  const posterContent = movie.img ? '' : '<span style="font-size:4em;color:white;">🎬</span>';
   
   card.innerHTML = `
     <div class="movie-like-stamp">LIKE</div>
     <div class="movie-nope-stamp">NOPE</div>
     <div class="movie-poster" style="${posterStyle}">
-      ${posterContent ? `<span style="color:white;">${posterContent}</span>` : ''}
+      ${posterContent}
       <div class="movie-rating-badge">⭐ ${movie.r.toFixed(1)}</div>
       <div class="movie-year-badge">${movie.y}</div>
     </div>
@@ -1404,31 +1385,56 @@ function createMovieCard(movie, depth) {
       <div class="movie-desc-text">${movie.d}</div>
     </div>
   `;
+  
+  // Навешиваем обработчики на КАЖДУЮ карточку
+  card.addEventListener('pointerdown', onDragStart);
+  card.addEventListener('pointermove', onDragMove);
+  card.addEventListener('pointerup', onDragEnd);
+  card.addEventListener('pointercancel', onDragEnd);
+  
   return card;
 }
 
-function updateCounter() {
-  document.getElementById('movieCounter').textContent = `Фильм ${movieState.index + 1} из ${movieState.shortlist.length}`;
+// Обновляем стили видимости/положения карточек после каждого свайпа
+function updateCardStyles() {
+  const cards = document.querySelectorAll('.movie-card-stack .movie-card');
+  cards.forEach(card => {
+    const idx = parseInt(card.dataset.idx);
+    const depth = idx - movieState.index;
+    
+    if (depth < 0) {
+      // Уже свайпнута — скрыта (transform задан через класс swipe-left/right)
+      return;
+    }
+    
+    if (depth > 2) {
+      // Слишком далеко — невидима
+      card.style.display = 'none';
+      card.style.pointerEvents = 'none';
+      return;
+    }
+    
+    card.style.display = '';
+    card.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+    card.style.transform = `scale(${1 - depth * 0.04}) translateY(${depth * 8}px)`;
+    card.style.opacity = depth === 0 ? '1' : (depth === 1 ? '0.85' : '0.6');
+    card.style.zIndex = 100 - depth;
+    card.style.pointerEvents = depth === 0 ? 'auto' : 'none';
+  });
 }
 
-// === Свайп-логика ===
+// === Свайп ===
 let dragState = null;
 
-function attachSwipeHandlers() {
-  // Берём ПОСЛЕДНЮЮ карточку в стеке — это depth=0, верхняя
-  const cards = document.querySelectorAll('.movie-card-stack .movie-card');
-  const topCard = cards[cards.length - 1];
-  if (!topCard) return;
-  
-  topCard.addEventListener('pointerdown', onDragStart);
-  topCard.addEventListener('pointermove', onDragMove);
-  topCard.addEventListener('pointerup', onDragEnd);
-  topCard.addEventListener('pointercancel', onDragEnd);
-}
-
 function onDragStart(e) {
+  if (movieState.isAnimating) return;
   const card = e.currentTarget;
+  const idx = parseInt(card.dataset.idx);
+  
+  // Тащим только верхнюю
+  if (idx !== movieState.index) return;
   if (card.classList.contains('swipe-left') || card.classList.contains('swipe-right')) return;
+  
   dragState = {
     card,
     startX: e.clientX,
@@ -1437,8 +1443,10 @@ function onDragStart(e) {
     likeStamp: card.querySelector('.movie-like-stamp'),
     nopeStamp: card.querySelector('.movie-nope-stamp')
   };
-  card.setPointerCapture(e.pointerId);
+  
+  try { card.setPointerCapture(e.pointerId); } catch(err) {}
   card.style.transition = 'none';
+  e.preventDefault();
 }
 
 function onDragMove(e) {
@@ -1449,7 +1457,6 @@ function onDragMove(e) {
   const rotate = dx / 20;
   dragState.card.style.transform = `translate(${dx}px, ${dy * 0.3}px) rotate(${rotate}deg)`;
   
-  // Штампы
   const threshold = 50;
   if (dx > threshold) {
     dragState.likeStamp.style.opacity = Math.min(1, (dx - threshold) / 80);
@@ -1467,60 +1474,69 @@ function onDragEnd(e) {
   if (!dragState) return;
   const dx = dragState.currentX;
   const threshold = 120;
-  dragState.card.style.transition = '';
+  const card = dragState.card;
+  
+  card.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
   
   if (dx > threshold) {
-    handleSwipe(true);
+    finishSwipe(true, card);
   } else if (dx < -threshold) {
-    handleSwipe(false);
+    finishSwipe(false, card);
   } else {
-    // Возврат
-    dragState.card.style.transform = '';
+    // Возврат на место
+    card.style.transform = 'scale(1) translateY(0)';
     dragState.likeStamp.style.opacity = 0;
     dragState.nopeStamp.style.opacity = 0;
   }
   dragState = null;
 }
 
-function handleSwipe(liked) {
-  const cards = document.querySelectorAll('.movie-card-stack .movie-card');
-  const topCard = cards[cards.length - 1];
-  if (!topCard) return;
+function finishSwipe(liked, card) {
+  if (movieState.isAnimating) return;
+  movieState.isAnimating = true;
+  
+  const movieIdx = parseInt(card.dataset.idx);
   
   if (liked) {
-    topCard.classList.add('swipe-right');
-    movieState[movieState.swiper === 'boy' ? 'boyLikes' : 'girlLikes'].add(movieState.index);
+    card.classList.add('swipe-right');
+    if (movieState.swiper === 'boy') movieState.boyLikes.add(movieIdx);
+    else movieState.girlLikes.add(movieIdx);
   } else {
-    topCard.classList.add('swipe-left');
+    card.classList.add('swipe-left');
   }
   
-  setTimeout(() => {
-    movieState.index++;
-    if (movieState.index >= movieState.shortlist.length) {
-      finishSwipingPhase();
-    } else {
-      renderMovieCards();
-    }
-  }, 400);
-}
+  // Скрываем штампы плавно
+  const ls = card.querySelector('.movie-like-stamp');
+  const ns = card.querySelector('.movie-nope-stamp');
+  if (ls) ls.style.opacity = liked ? 1 : 0;
+  if (ns) ns.style.opacity = liked ? 0 : 1;
   
   setTimeout(() => {
     movieState.index++;
+    movieState.isAnimating = false;
+    
     if (movieState.index >= movieState.shortlist.length) {
       finishSwipingPhase();
     } else {
-      renderMovieCards();
+      updateCardStyles();
+      updateCounter();
     }
-  }, 400);
+  }, 450);
 }
 
 // Кнопки
 document.getElementById('btnLike').addEventListener('click', () => {
-  if (movieState.index < movieState.shortlist.length) handleSwipe(true);
+  if (movieState.isAnimating || movieState.index >= movieState.shortlist.length) return;
+  const card = document.querySelector(`.movie-card[data-idx="${movieState.index}"]`);
+  if (card) finishSwipe(true, card);
 });
+
 document.getElementById('btnNope').addEventListener('click', () => {
-  if (movieState.index < movieState.shortlist.length) handleSwipe(false);
+  if (movieState.isAnimating || movieState.index >= movieState.shortlist.length) return;
+  const card = document.querySelector(`.movie-card[data-idx="${movieState.index}"]`);
+  if (card) finishSwipe(false, card);
 });
+
 document.getElementById('btnInfo').addEventListener('click', () => {
   if (movieState.index >= movieState.shortlist.length) return;
   const movie = movieState.shortlist[movieState.index];
@@ -1532,6 +1548,7 @@ function openMovieModal(movie) {
   const poster = document.getElementById('movieModalPoster');
   if (movie.img) {
     poster.style.backgroundImage = `url('${movie.img}')`;
+    poster.style.background = '';
     poster.innerHTML = '';
   } else {
     poster.style.backgroundImage = '';
@@ -1553,17 +1570,11 @@ document.getElementById('movieModal').addEventListener('click', e => {
   if (e.target.id === 'movieModal') e.target.classList.remove('active');
 });
 
-function showStackEmpty() {
-  document.getElementById('movieStackEmpty').classList.add('active');
-}
-
 function finishSwipingPhase() {
   if (movieState.swiper === 'boy') {
-    // Переход к фазе передачи устройства
     document.getElementById('moviePhaseSwipe').classList.remove('active');
     document.getElementById('moviePhasePass').classList.add('active');
   } else {
-    // Показываем результаты
     showMovieResults();
   }
 }
@@ -1571,17 +1582,17 @@ function finishSwipingPhase() {
 document.getElementById('passNextBtn').addEventListener('click', () => {
   movieState.swiper = 'girl';
   movieState.index = 0;
+  movieState.isAnimating = false;
   document.getElementById('moviePhasePass').classList.remove('active');
   document.getElementById('moviePhaseSwipe').classList.add('active');
   updateSwiperHeader();
-  renderMovieCards();
+  buildAllCards(); // Пересоздаём карточки для Ариши
 });
 
 function showMovieResults() {
   document.getElementById('moviePhaseSwipe').classList.remove('active');
   document.getElementById('moviePhaseResults').classList.add('active');
   
-  // Находим матчи — индексы, где оба лайкнули
   const matches = [];
   movieState.boyLikes.forEach(idx => {
     if (movieState.girlLikes.has(idx)) matches.push(movieState.shortlist[idx]);
@@ -1631,17 +1642,16 @@ function declension(num, words) {
 }
 
 function resetMovies() {
-  movieState.phase = 'intro';
   movieState.swiper = 'boy';
   movieState.index = 0;
   movieState.boyLikes.clear();
   movieState.girlLikes.clear();
+  movieState.isAnimating = false;
   document.getElementById('moviePhaseResults').classList.remove('active');
   document.getElementById('moviePhaseSwipe').classList.remove('active');
   document.getElementById('moviePhasePass').classList.remove('active');
   document.getElementById('movieIntro').style.display = 'block';
 }
-
 // ===== ДВЕ ПОЛОВИНКИ =====
 const ALL_QUIZ_QUESTIONS = {
   love: {
