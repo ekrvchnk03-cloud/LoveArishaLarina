@@ -1356,6 +1356,18 @@ function renderMovieCards() {
     return;
   }
   
+  // Показываем до 3 карточек: сначала рисуем нижние, потом верхние
+  // Чтобы верхняя (depth=0) оказалась ПОСЛЕДНЕЙ в DOM
+  const maxDepth = Math.min(2, movieState.shortlist.length - movieState.index - 1);
+  for (let i = maxDepth; i >= 0; i--) {
+    const movie = movieState.shortlist[movieState.index + i];
+    const card = createMovieCard(movie, i);
+    stack.appendChild(card);
+  }
+  updateCounter();
+  attachSwipeHandlers();
+}
+  
   // Показываем текущую и 2 следующих карточки
   for (let i = Math.min(2, movieState.shortlist.length - movieState.index - 1); i >= 0; i--) {
     const movie = movieState.shortlist[movieState.index + i];
@@ -1403,14 +1415,15 @@ function updateCounter() {
 let dragState = null;
 
 function attachSwipeHandlers() {
-  const topCard = document.querySelector('.movie-card-stack .movie-card');
+  // Берём ПОСЛЕДНЮЮ карточку в стеке — это depth=0, верхняя
+  const cards = document.querySelectorAll('.movie-card-stack .movie-card');
+  const topCard = cards[cards.length - 1];
   if (!topCard) return;
   
   topCard.addEventListener('pointerdown', onDragStart);
   topCard.addEventListener('pointermove', onDragMove);
   topCard.addEventListener('pointerup', onDragEnd);
   topCard.addEventListener('pointercancel', onDragEnd);
-  topCard.addEventListener('pointerleave', onDragEnd);
 }
 
 function onDragStart(e) {
@@ -1470,19 +1483,26 @@ function onDragEnd(e) {
 }
 
 function handleSwipe(liked) {
-  const topCard = document.querySelector('.movie-card-stack .movie-card');
+  const cards = document.querySelectorAll('.movie-card-stack .movie-card');
+  const topCard = cards[cards.length - 1];
   if (!topCard) return;
-  
-  const movieIdx = movieState.index;
-  const movie = movieState.shortlist[movieIdx];
   
   if (liked) {
     topCard.classList.add('swipe-right');
-    if (movieState.swiper === 'boy') movieState.boyLikes.add(movieIdx);
-    else movieState.girlLikes.add(movieIdx);
+    movieState[movieState.swiper === 'boy' ? 'boyLikes' : 'girlLikes'].add(movieState.index);
   } else {
     topCard.classList.add('swipe-left');
   }
+  
+  setTimeout(() => {
+    movieState.index++;
+    if (movieState.index >= movieState.shortlist.length) {
+      finishSwipingPhase();
+    } else {
+      renderMovieCards();
+    }
+  }, 400);
+}
   
   setTimeout(() => {
     movieState.index++;
